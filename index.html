@@ -56,20 +56,47 @@
     */
 
     /* 👉 Task 1 - [HINT] only the flex container needs to be manipulated */
+    #flexContainer1 {
+      flex-direction: row;
+    }
 
     /* 👉 Task 2 - [HINT] the flex container needs to change direction */
+    #flexContainer2 {
+  flex-direction: column;
+}
 
     /* 👉 Task 3 - [HINT] the flex direction can be reversed */
+    #flexContainer3 {
+  flex-direction: row-reverse;
+}
 
     /* 👉 Task 4 - [HINT] the flex items need a new order */
+    #flexContainer4 .item1 {
+  order: 2;
+}
+#flexContainer4 .item2 {
+  order: 1;
+}
 
     /* 👉 Task 5 - [HINT] research align-self */
+    #flexContainer5 .item1 {
+  align-self: flex-end;
+}
 
     /* 👉 Task 6 - [HINT] flex items can be flex containers */
+    #flexContainer6 .item1 {
+  display: flex;
+}
 
     /* 👉 Task 7 - [HINT] research flex-grow */
+    #flexContainer7 .item1 {
+  flex-grow: 1;
+}
 
     /* 👉 Task 8 - [HINT] you got this! */
+    #flexContainer8 {
+  /* Your custom CSS here */
+}
 
 
     /*
@@ -77,7 +104,43 @@
     Revisit the Module Project of HTML & CSS II and re-style it using Flexbox.
     Prior to starting, remove the "inline-block" declarations, which were a workaround to make divs fall in rows.
     */
-
+    /* Flex container */
+    #module-project {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    /* Module items */
+    #module-project .module {
+      width: 30%;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid black;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+    }
+    /* Module item heading */
+    #module-project .module h2 {
+      margin-bottom: 10px;
+    }
+    /* Module item description */
+    #module-project .module p {
+      margin: 5px 0;
+    }
+    /* Module item button */
+    #module-project .module button {
+      margin-top: 10px;
+      padding: 5px 10px;
+      border: 1px solid black;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      cursor: pointer;
+    }
+    /* Module item button hover */
+    #module-project .module button:hover {
+      background-color: #d9d9d9;
+    }
+    
     /* ❗ 👉 WORK ABOVE THIS LINE! */
     /* ❗ 👉 WORK ABOVE THIS LINE! */
     /* ❗ 👉 WORK ABOVE THIS LINE! */
